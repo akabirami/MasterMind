@@ -38,20 +38,6 @@ public class AnagramUtil {
 		
 	}
 	
-	
-	public static Map<String,String> getDesiredLength(int k){
-	
-		Map<String, String> result=new HashMap<String,String>();
-		Map<String,String> anagrams=getMapOfWords(0);
-		
-		for(String s:anagrams.keySet()){
-			if(s.length()==k){
-				result.put(s, anagrams.get(s));
-			}
-		}
-		return result;
-		
-	}
 
 	public static Map<String,String> getMapOfWords(int k){
 		 Map<String,String> words_count = new HashMap<String,String>();
